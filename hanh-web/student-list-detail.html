@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xét điểm rèn luyện - Danh sách sinh viên</title>
+    <link rel="stylesheet" href="./library/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body class="cms-student-list-results">
+    <main class="page-main">
+        <div class="columns dflex">
+            <div class="sidebar">
+                <div class="block person-info">
+                    <div class="block-images">
+                        <img src="./images/avatar.png" alt="">
+                    </div>
+                    <div class="block-details">
+                        <h2 class="name"><a href="./account.html" class="account-link">Lê Văn Hanh</a></h2>
+                        <p class="part-number">0123456789</p>
+                    </div>
+                </div>
+                <ul class="block block-menu">
+                    <li class="item active"><a href="./overview.html"><i class="fa fa-home" aria-hidden="true"></i><span class="title">Tổng quan </span></a></li>
+                    <li class="item"><a href="./scorecard.html"><i class="fa fa-file-excel-o" aria-hidden="true"></i><span class="title">Phiếu xét điểm rèn luyện</span></a></li>
+                    <li class="item"><a href="#"><i class="fa fa-list-alt" aria-hidden="true"></i><span class="title">Danh sách lớp</span></a></li>
+                    <li class="item"><a href="./index.html"><i class="fa fa-list-alt" aria-hidden="true"></i><span class="title">Danh sách khoa</span></a></li>
+                    <li class="item"><a href="./student-list.html"><i class="fa fa-list-alt" aria-hidden="true"></i><span class="title">Danh sách sinh viên</span></a></li>
+                    <li class="item"><a href="./teacher-list.html"><i class="fa fa-list-alt" aria-hidden="true"></i><span class="title">Danh sách giảng viên</span></a></li>
+                </ul>
+            </div>
+            <div class="column-main">
+                <div class="page-title dflex">
+                    <h1 class="title">Danh sách sinh viên <span class="search-results"><span class="label">Tìm thấy:</span><span class="value">150 sinh viên thuộc 4 lớp</span></span></h1>
+                    <button class="action-add">+ Thêm mới</button>
+                    <form action="" class="form-search">
+                        <input type="text" class="input-text" placeholder="Tìm kiếm">
+                        <button class="action ac-search"><i class="fa fa-search" aria-hidden="true"></i><span>search</span></button>
+                    </form>
+                </div>
+                <div class="page-content">
+                    <div class="block block-statistical dflex">
+                        <div class="column-full column-number text-center">
+                            <ul class="items list-unstyled">
+                                <li class="item">
+                                    <span class="label">Năm học:</span>
+                                    <select name="year" id="year">
+                                        <option value="1">Chọn Năm học</option>
+                                        <option value="2">2019-2020</option>
+                                        <option value="2">2020-2021</option>
+                                        <option value="3">2021-2022</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block block-imfomation dflex">
+                        <div class="column-full column-number">
+                            <ul class="items list-unstyled">
+                                <li class="item">
+                                    <span class="label">Tổng số khoa:</span>
+                                    <span class="value">21</span>
+                                </li>
+                                <li class="item">
+                                    <span class="label">Tổng số lớp:</span>
+                                    <span class="value">100</span>
+                                </li>
+                                <li class="item">
+                                    <span class="label">Tổng số sinh viên:</span>
+                                    <span class="value">25000</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block block-teacher-table">
+                        <table class="teacher-list">
+                            <tr>
+                                <th class="col stt">STT</th>
+                                <th class="col major-code-code">Mã khoa</th>
+                                <th class="col major">Tên khoa</th>
+                                <th class="col name">Giáo viên phụ trách</th>
+                                <th class="col email">Email</th>
+                                <th class="col class">Số lớp</th>
+                                <th class="col student">Số sinh viên</th>
+                                <th class="col action">Tác vụ</th>
+                            </tr>
+                            <tr>
+                                <td class="col stt">1</td>
+                                <td class="col major-code">685105001</td>
+                                <td class="col major">SP Tin</td>
+                                <td class="col name">Nguyễn Thị B</td>
+                                <td class="col email">nguyenthib@gmail.com</td>
+                                <td class="col student">10</td>
+                                <td class="col class">750</td>
+                                <td class="col action"><button class="btn btn-view">Xem chi tiết</button><button class="btn btn-edit btn-modal" data-modal="form-edit-info">Sửa</button></td>
+                            </tr>
+                            <tr>
+                                <td class="col stt">2</td>
+                                <td class="col major-code">685105002</td>
+                                <td class="col major">SP Tin</td>
+                                <td class="col name">Trần VĂn C</td>
+                                <td class="col email">tranvanc@gmail.com</td>
+                                <td class="col student">11</td>
+                                <td class="col class">800</td>
+                                <td class="col action"><button class="btn btn-view">Xem chi tiết</button><button class="btn btn-edit btn-modal" data-modal="form-edit-info">Sửa</button></td>
+                            </tr>
+                            <tr>
+                                <td class="col stt">3</td>
+                                <td class="col major-code">685105003</td>
+                                <td class="col major">SP Toán</td>
+                                <td class="col name">Lê VĂn D</td>
+                                <td class="col email">levand@gmail.com</td>
+                                <td class="col student">12</td>
+                                <td class="col class">500</td>
+                                <td class="col action"><button class="btn btn-view">Xem chi tiết</button><button class="btn btn-edit btn-modal" data-modal="form-edit-info">Sửa</button></td>
+                            </tr>
+                            <tr>
+                                <td class="col stt">4</td>
+                                <td class="col major-code">685105004</td>
+                                <td class="col major">SP Ngữ văn</td>
+                                <td class="col name">Nguyễn VĂn E</td>
+                                <td class="col email">nguyenvane@gmail.com</td>
+                                <td class="col student">13</td>
+                                <td class="col class">700</td>
+                                <td class="col action"><button class="btn btn-view">Xem chi tiết</button><button class="btn btn-edit btn-modal" data-modal="form-edit-info">Sửa</button></td>
+                            </tr>
+                            <tr>
+                                <td class="col stt">5</td>
+                                <td class="col major-code">685105001</td>
+                                <td class="col major">SP Giáo dục công dân</td>
+                                <td class="col name">Bùi Thị H</td>
+                                <td class="col email">buithih@gmail.com</td>
+                                <td class="col student">14</td>
+                                <td class="col class">950</td>
+                                <td class="col action"><button class="btn btn-view">Xem chi tiết</button><button class="btn btn-edit btn-modal" data-modal="form-edit-info">Sửa</button></td>
+                            </tr>
+                        </table>
+                        <ul class="pagination">
+                            <li class="item prev"><a class="title" href="#">Prev</a></li>
+                            <li class="item"><a class="title" href="#">1</a></li>
+                            <li class="item"><span class="active title" class="title" href="#">2</span></li>
+                            <li class="item"><a class="title" href="#">3</a></li>
+                            <li class="item"><a class="title" href="#">4</a></li>
+                            <li class="item"><a class="title" href="#">5</a></li>
+                            <li class="item"><a class="title" href="#">6</a></li>
+                            <li class="item next"><a class="title" href="#">Next</a></li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>   
+
+    <!-- modal edit infomation -->
+    <div class="modal-edit-info modal-custom short-modal" id="form-edit-info">
+        <div class="inner-wrapper">
+            <div class="modal-body">
+                <div class="title-wrapper">
+                    <span class="title">Sửa thông tin khoa</span>
+                </div>
+                <div class="content-wrapper">
+                    <ul class="edit-info-list list-unstyled">
+                        <li class="item">
+                            <span class="label">Mã khoa:</span>
+                            <span class="value"><input type="text" class="input-text" value="01234"></span>
+                        </li>
+                        <li class="item">
+                            <span class="label">Tên khoa:</span>
+                            <span class="value"><input type="text" class="input-text" value="SP Tin"></span>
+                        </li>
+                        <li class="item">
+                            <span class="label">Giáo viên phụ trách:</span>
+                            <span class="value"><input type="text" class="input-text" value="Nguyễn Văn H"></span>
+                        </li>
+                        <li class="item">
+                            <span class="label">Email:</span>
+                            <span class="value"><input type="text" class="input-text" value="nguyenvanh@gmail.com"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="action-wrapper">
+                    <button class="btn-cancel btn-block btn-close btn-modal" data-modal="form-edit-info">Hủy</button>
+                    <button class="btn-submit btn-block btn-modal" data-modal="form-confirm-success">Lưu thông tin</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-confirm-success modal-custom short-modal" id="form-confirm-success">
+        <div class="inner-wrapper">
+            <div class="modal-body">
+                <div class="title-wrapper">
+                    <span class="title">sửa thông tin thành công</span>
+                </div>
+                <div class="action-wrapper">
+                    <button class="btn-cancel btn-block btn-close btn-modal" data-modal="form-confirm-success">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./library/jquery.min.js"></script>
+    <script src="./library/js/bootstrap.min.js"></script>
+    <script src="./javascript/main.js"></script>
+</body>
+</html>

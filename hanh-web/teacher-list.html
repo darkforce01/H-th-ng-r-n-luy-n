@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xét điểm rèn luyện - Danh sách giảng viên</title>
+    <link rel="stylesheet" href="./library/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body class="cms-teacher-list">
+    <main class="page-main">
+        <div class="columns dflex">
+            <div class="sidebar">
+                <div class="block person-info">
+                    <div class="block-images">
+                        <img src="./images/avatar.png" alt="">
+                    </div>
+                    <div class="block-details">
+                        <h2 class="name"><a href="./account.html" class="account-link">Lê Văn Hanh</a></h2>
+                        <p class="part-number">0123456789</p>
+                    </div>
+                </div>
+                <ul class="block block-menu">
+                    <li class="item active"><a href="./overview.html"><i class="fa fa-home" aria-hidden="true"></i><span class="title">Tổng quan </span></a></li>
+                    <li class="item"><a href="./scorecard.html"><i class="fa fa-file-excel-o" aria-hidden="true"></i><span class="title">Phiếu xét điểm rèn luyện</span></a></li>
+                    <li class="item"><a href="#"><i class="fa fa-list-alt" aria-hidden="true"></i><span class="title">Danh sách lớp</span></a></li>
+                    <li class="item"><a href="./index.html"><i class="fa fa-list-alt" aria-hidden="true"></i><span class="title">Danh sách khoa</span></a></li>
+                    <li class="item"><a href="./student-list.html"><i class="fa fa-list-alt" aria-hidden="true"></i><span class="title">Danh sách sinh viên</span></a></li>
+                    <li class="item"><a href="./teacher-list.html"><i class="fa fa-list-alt" aria-hidden="true"></i><span class="title">Danh sách giảng viên</span></a></li>
+                </ul>
+            </div>
+            <div class="column-main">
+                <div class="page-title dflex">
+                    <h1 class="title">Danh sách giảng viên <span class="search-results"><span class="label">Tìm thấy:</span><span class="value">50 giảng viên</span></span></h1>
+                    <button class="action-add">+ Thêm mới</button>
+                    <form action="" class="form-search">
+                        <input type="text" class="input-text" placeholder="Tìm kiếm">
+                        <button class="action ac-search"><i class="fa fa-search" aria-hidden="true"></i><span>search</span></button>
+                    </form>
+                </div>
+                <div class="page-content">
+                    <div class="block block-statistical dflex">
+                        <div class="column-full column-number text-center">
+                            <ul class="items list-unstyled">
+                                <li class="item">
+                                    <span class="label">Năm học:</span>
+                                    <select name="year" id="year">
+                                        <option value="1">Chọn năm học</option>
+                                        <option value="2">2019-2020</option>
+                                        <option value="3">2020-2021</option>
+                                    </select>
+                                </li>
+                                <li class="item"></li>
+                                    <span class="label">Học kì:</span>
+                                    <select name="year" id="year">
+                                        <option value="1">Chọn học kì</option>
+                                        <option value="2">1</option>
+                                        <option value="3">2</option>
+                                        <option value="4">hè</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block block-teacher-table">
+                        <table class="teacher-list">
+                            <tr>
+                                <th class="col stt">STT</th>
+                                <th class="col code">Mã giảng viên</th>
+                                <th class="col name">Họ tên</th>
+                                <th class="col email">Email</th>
+                                <th class="col class">Lớp quản lý</th>
+                                <th class="col action">Tác vụ</th>
+                            </tr>
+                            <tr>
+                                <td class="col stt">1</td>
+                                <td class="col code">685105001</td>
+                                <td class="col name">Nguyễn Thị B</td>
+                                <td class="col email">nguyenthib@gmail.com</td>
+                                <td class="col class"><span>K60A</span><span>K70K</span></td>
+                                <td class="col action"><button class="btn btn-edit">Sửa</button></td>
+                            </tr>
+                            <tr>
+                                <td class="col stt">2</td>
+                                <td class="col code">685105002</td>
+                                <td class="col name">Trần VĂn C</td>
+                                <td class="col email">tranvanc@gmail.com</td>
+                                <td class="col class"><span>K67A</span></td>
+                                <td class="col action"><button class="btn btn-edit">Sửa</button></td>
+                            </tr>
+                            <tr>
+                                <td class="col stt">3</td>
+                                <td class="col code">685105003</td>
+                                <td class="col name">Lê VĂn D</td>
+                                <td class="col email">levand@gmail.com</td>
+                                <td class="col class"><span>K67B</span></td>
+                                <td class="col action"><button class="btn btn-edit">Sửa</button></td>
+                            </tr>
+                            <tr>
+                                <td class="col stt">4</td>
+                                <td class="col code">685105004</td>
+                                <td class="col name">Nguyễn VĂn E</td>
+                                <td class="col email">nguyenvane@gmail.com</td>
+                                <td class="col class"><span>K69K</span></td>
+                                <td class="col action"><button class="btn btn-edit">Sửa</button></td>
+                            </tr>
+                            <tr>
+                                <td class="col stt">5</td>
+                                <td class="col code">685105001</td>
+                                <td class="col name">Bùi Thị H</td>
+                                <td class="col email">buithih@gmail.com</td>
+                                <td class="col class"><span>K60A</span></td>
+                                <td class="col action"><button class="btn btn-edit">Sửa</button></td>
+                            </tr>
+                        </table>
+                        <ul class="pagination">
+                            <li class="item prev"><a class="title" href="#">Prev</a></li>
+                            <li class="item"><a class="title" href="#">1</a></li>
+                            <li class="item"><span class="active title" class="title" href="#">2</span></li>
+                            <li class="item"><a class="title" href="#">3</a></li>
+                            <li class="item"><a class="title" href="#">4</a></li>
+                            <li class="item"><a class="title" href="#">5</a></li>
+                            <li class="item"><a class="title" href="#">6</a></li>
+                            <li class="item next"><a class="title" href="#">Next</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>   
+
+    <script src="./library/jquery.min.js"></script>
+    <script src="./library/js/bootstrap.min.js"></script>
+    <script src="./javascript/main.js"></script>
+</body>
+</html>
